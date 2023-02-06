@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 100px;
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}/*# sourceMappingURL=signup.css.map */
