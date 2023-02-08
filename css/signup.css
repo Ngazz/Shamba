@@ -1,22 +1,60 @@
-*,
-::after,
-::before {
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
+@import url(styles.css);
 body {
   margin: 0 100px;
+  font-family: "Poppins", sans-serif;
 }
 
 main .container {
   display: flex;
   justify-content: space-between;
-  padding: 100px;
+  padding-top: 43px;
+}
+
+main .welcome-msg input[type=button] {
+  font-size: 20px;
+  height: 49px;
+  width: 192px;
+  color: white;
+  background-color: #001aff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 43px;
+}
+
+main .container .login-signup {
+  background-color: white;
+  padding: 80px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+}
+main .container .login-signup h3 {
+  display: flex;
+}
+main .container .login-signup .commands {
+  background-color: gray;
+  padding: 20px;
+  height: 50px;
+  width: 250px;
+}
+
+main .container .login .login-lables {
+  margin-top: 20px;
+}
+main .container .login .login-lables form input,
+main .container .login .login-lables label {
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 20px;
+}
+main .container .login .login-lables p {
+  font-size: 20px;
+}
+
+main .container .sign-up .signup-lables {
+  display: none;
+}
+
+footer .container .social-icons img {
+  padding: 15px;
 }/*# sourceMappingURL=signup.css.map */
