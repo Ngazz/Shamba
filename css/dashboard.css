@@ -1,16 +1,33 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@import url(styles.css);
+main .container .navigation {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 49px;
+  width: 192px;
+  margin-bottom: 38px;
 }
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
+main .container .navigation img {
+  align-items: center;
+  padding-left: 45px;
 }
-
-body {
-  margin: 0 100px;
+main .container .navigation p {
+  color: #001aff;
+  font-size: 24px;
+  padding-left: 10px;
+}
+main .container .navigation:hover {
+  background-color: #B0B5DF;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 49px;
+  width: 192px;
+  -webkit-animation: ease-out 0.2s;
+          animation: ease-out 0.2s;
+}
+main .container .navigation:hover img {
+  scale: 1;
+}
+main .container .navigation:hover p {
+  font-weight: bolder;
 }/*# sourceMappingURL=dashboard.css.map */

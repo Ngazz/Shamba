@@ -1,16 +1,35 @@
-*,
-::after,
-::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-}
-
-body {
-    margin: 0 100px;
+@import url(styles.css);
+main .container {
+    .navigation {
+        // background-color: red;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 49px;
+        width: 192px;
+        margin-bottom: 38px;
+        img {
+            align-items: center;
+            padding-left: 45px;
+        }
+        p {
+            color: #001aff;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+    }
+    .navigation:hover {
+        background-color: #B0B5DF;
+        cursor: pointer;
+        border-radius: 10px;
+        height: 49px;
+        width: 192px;
+        animation: ease-out 0.2s;
+        img {
+            scale: 1.0;
+        }
+        p {
+            font-weight: bolder;
+        }
+    }
 }
