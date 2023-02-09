@@ -1,20 +1,4 @@
-// *,
-// ::after,
-// ::before {
-//     padding: 0;
-//     box-sizing: border-box;
-//     margin: 0;
-// }
 @import url(styles.css);
-// .container {
-//     max-width: 1240px;
-//     margin: 0 auto;
-// }
-body {
-    margin: 0 100px;
-    font-family: 'Poppins', sans-serif;
-}
-
 main .container {
     display: flex;
     justify-content: space-between;

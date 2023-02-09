@@ -1,4 +1,36 @@
 @import url(styles.css);
+header .search {
+  display: flex;
+  height: 56px;
+}
+header .search img {
+  background-color: #001aff;
+  width: 77px;
+  height: 55px;
+}
+header .account {
+  display: flex;
+  align-items: baseline;
+}
+header .account #name {
+  color: #121212;
+  font-size: 20px;
+}
+
+header .search input[type=text] {
+  border: 2px #001aff solid;
+  width: 408px;
+  height: 53px;
+  padding: 10px;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+}
 main .container .navigation {
   display: flex;
   justify-content: left;
@@ -30,4 +62,19 @@ main .container .navigation:hover img {
 }
 main .container .navigation:hover p {
   font-weight: bolder;
+}
+main .container .content-area {
+  width: 1030px;
+  border-left: 0.5px solid #001aff;
+}
+main .container .content-area .contents {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #001aff;
+  width: 900px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 80%;
 }/*# sourceMappingURL=dashboard.css.map */
