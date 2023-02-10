@@ -82,3 +82,31 @@ main .container {
         }
     }
 }
+
+
+/************************* button style***
+*************************************************/
+
+main {
+    input[type="button"] {
+        font-size: 20px;
+        height: 49px;
+        width: 192px;
+        border-radius: 10px;
+        border: none;
+        background-color: #001aff;
+        color: white;
+    }
+    input[type="button"]:hover {
+        font-weight: bolder;
+        transition: ease-in-out .5s;
+        background-color: #000a60;
+        // transform: matrix3d(0.5, 0, -0.866025, 0, 0.595877, 1.2, -1.03209, 0, 0.866025, 0, 0.5, 0, 25.9808, 0, 15, 1);
+        text-transform: capitalize;
+    }
+}
+
+main .log-out {
+    justify-content: space-between;
+    height: 100vh;
+}
