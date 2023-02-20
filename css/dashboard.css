@@ -42,8 +42,9 @@ main .container .navigation {
 main .container .navigation img {
   align-items: center;
   padding-left: 45px;
+  scale: 1;
 }
-main .container .navigation p {
+main .container .navigation .icon-labels {
   color: #001aff;
   font-size: 24px;
   padding-left: 10px;
@@ -69,13 +70,15 @@ main .container .content-area {
 main .container .content-area .contents {
   margin: 0 auto;
   padding: 10px;
-  background-color: #001aff;
   width: 900px;
   height: 100px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   opacity: 80%;
+}
+main .container .content-area p {
+  font-size: 19px;
 }
 
 /************************* button style***
@@ -95,8 +98,35 @@ main input[type=button]:hover {
   background-color: #000a60;
   text-transform: capitalize;
 }
+main .no-items {
+  align-items: center;
+  justify-content: center;
+}
+main .no-items img {
+  margin-left: 100px;
+}
+
+/************************Item display******************************
+****************************************************************
+******************************************/
+main .home-contents .land-items {
+  background-color: red;
+}
 
 main .log-out {
   justify-content: space-between;
   height: 100vh;
+  display: none;
+}
+
+main .register-contents {
+  display: none;
+}
+
+main .transfer-contents {
+  display: none;
+}
+
+main .profile-contents {
+  display: none;
 }/*# sourceMappingURL=dashboard.css.map */
