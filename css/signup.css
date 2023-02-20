@@ -85,11 +85,15 @@ main .login-lables p {
   margin-top: 20px;
 }
 
-main .signup-lables {
+main .next {
+  display: none;
+}
+
+.signup-lables {
   background-size: cover;
   gap: 50px;
 }
-main .signup-lables input[type=submit] {
+.signup-lables input[type=submit] {
   height: 49px;
   width: 192px;
   border-radius: 10px;
@@ -99,19 +103,44 @@ main .signup-lables input[type=submit] {
   margin: 20px 0;
   font-size: 20px;
 }
-main .signup-lables input[type=text],
-main .signup-lables input[type=number],
-main .signup-lables input[type=password] {
+.signup-lables input[type=text],
+.signup-lables input[type=number],
+.signup-lables input[type=password] {
   padding: 10px;
   width: 100%;
   height: 49px;
   border-radius: 5px;
 }
-main .signup-lables form {
+.signup-lables form {
   padding: 40px 0 10px;
 }
-main .signup-lables .next {
-  display: none;
+
+.next {
+  padding: 40px 0 20px;
+}
+.next form {
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.next input[type=submit] {
+  background-color: #001aff;
+  height: 49px;
+  width: 192px;
+  border: none;
+  border-radius: 10;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.next input[type=text],
+.next input[type=number],
+.next input[type=password] {
+  padding: 10px;
+  width: 100%;
+  height: 49px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 footer .container .social-icons img {
