@@ -1,8 +1,11 @@
-// Log In and Signup Styles
+function showNext() {
+    const nextBtn = document.getElementById('Next');
+    const nextItems = document.getElementById('next-items');
 
-const next = document.getElementById("next");
-const next_items = document.querySelector("main .next ");
+    nextBtn.classList.remove('signup-lables');
+    nextBtn.classList.toggle('next');
+    nextItems.classList.remove('next');
+    nextItems.classList.toggle('signup-lables');
+    nextBtn.classList.remove('signup-lables');
 
-next.addEventListener('click', () => {
-    next_items.classList.toggle(".next")
-}, true);
+}
