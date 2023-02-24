@@ -33,9 +33,9 @@
                 <div class="login-lables">
                     <form action="">
                         <label for="">Username or Email:</label><br>
-                        <input type="text" name="user" id="user"><br>
+                        <input type="text" name="user" class="user"><br>
                         <label>Password:</Label><br>
-                        <input type="password" name="pass" id="pass">
+                        <input type="password" name="pass" class="pass">
                     </form>
                     <p><a href="#">Forgot Password?</a></p>
                     <input type="submit" value="Log In">
@@ -43,29 +43,30 @@
                 </div>
                 <div class="sign-up">
                     <div class="signup-lables">
-                        <form action="">
+                        <form action="" id="hidden">
                             <label for="">Username:</label><br>
-                            <input type="text" name="user" id="user"><br>
+                            <input type="text" name="user" class="user"><br>
                             <label for="">Email:</label><br>
-                            <input type="text" name="user" id="user"><br>
+                            <input type="text" name="user" class="user"><br>
                             <label for="">Password:</label><br>
-                            <input type="password" name="pass" id="user"><br>
+                            <input type="password" name="pass" class="user"><br>
                             <Label>Confirm Password:</Label><br>
-                            <input type="password" name="pass" id="pass">
+                            <input type="password" name="pass" class="pass">
                         </form>
-                        <input type="submit" value="Next" id="next">
-                        <p>Have an Account? <a href="#">Log In</a></p>
+                        <input type="submit" value="Next" id="Next" onclick="showNext()">
+                        <p id="login" class="id">Have an Account? <a href="#">Log In</a></p>
                     </div>
-                    <div class="next">
+
+                    <div class="next" id="next-items">
                         <form action="">
                             <label for="">Mobile Number:</label><br>
-                            <input type="text" name="user" id="user"><br>
+                            <input type="text" name="user" class="user"><br>
                             <label for="">Id Number or Passportl:</label><br>
-                            <input type="number" name="user" id="user"><br>
+                            <input type="number" name="user" class="user"><br>
                             <label for="">Residence:</label><br>
-                            <input type="text" name="user" id="user"><br>
+                            <input type="text" name="user" class="user"><br>
                         </form>
-                        <input type="submit" value="Sign Up">
+                        <a href="Dashboard.html"><input type="submit" value="Sign Up"></a>
                     </div>
                 </div>
             </div>
