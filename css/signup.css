@@ -53,14 +53,15 @@ main .login .commands:focus {
   background-color: #001aff;
 }
 
-main .login-lables {
+.login-lables {
   display: none;
   margin-top: 20px;
   background-size: cover;
   gap: 50px;
+  display: block;
 }
-main .login-lables input[type=text],
-main .login-lables input[type=password] {
+.login-lables input[type=text],
+.login-lables input[type=password] {
   width: 100%;
   height: 49px;
   padding: 10px;
@@ -68,10 +69,10 @@ main .login-lables input[type=password] {
   color: #001aff;
   border-radius: 10px;
 }
-main .login-lables form {
+.login-lables form {
   padding-top: 20px;
 }
-main .login-lables input[type=submit] {
+.login-lables input[type=submit] {
   width: 192px;
   height: 49px;
   border: none;
@@ -81,7 +82,7 @@ main .login-lables input[type=submit] {
   color: white;
   margin: 20px 0;
 }
-main .login-lables p {
+.login-lables p {
   margin-top: 20px;
 }
 
@@ -90,6 +91,7 @@ main .next {
 }
 
 .signup-lables {
+  display: none;
   background-size: cover;
   gap: 50px;
 }

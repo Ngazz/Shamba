@@ -60,11 +60,12 @@ main .container .sign-up .signup-lables {
     // display: none;
 }
 
-main .login-lables {
+.login-lables {
     display: none;
     margin-top: 20px;
     background-size: cover;
     gap: 50px;
+    display: block;
     input[type="text"],
     input[type="password"] {
         width: 100%;
@@ -97,6 +98,7 @@ main .next {
 }
 
 .signup-lables {
+    display: none;
     background-size: cover;
     gap: 50px;
     input[type="submit"] {
