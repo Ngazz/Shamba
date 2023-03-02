@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="/js/index.js"></script>
 </head>
 
 <body>
@@ -31,29 +32,29 @@
 
             <!-- Left Tabs -->
             <div class="navigations">
-                <span class="navigation">
+                <span class="navigation" id="home">
                     <img src="/images/Icons2/ic_round-homeIcons.svg" alt="Home" srcset="">
                     <p class="icon-labels">
                         Home
                     </p>
                 </span>
-                <span class="navigation">
+                <span class="navigation" id="register">
                     <img src="/images/Icons2/material-symbols_assignment-add-outlineIcons.svg" alt="Register" srcset="">
                     <p class="icon-labels">
                         Register
                     </p>
                 </span>
-                <span class="navigation">
+                <span class="navigation" id="transfer">
                     <img src="/images/Icons2/mdi_file-transferIcons.svg" alt="Transfer" srcset="">
                     <p class="icon-labels">
                         Transfer
                     </p>
-                </span><span class="navigation">
+                </span><span class="navigation" id="profile">
                     <img src="/images/Icons2/material-symbols_person-3Icons.svg" alt="Profile" srcset="">
                     <p class="icon-labels">
                         Profile
                     </p>
-                </span><span class="navigation">
+                </span><span class="navigation" id="logout" onclick="log_out()">
                     <img src="/images/Icons2/mdi_logoutIcons.svg" alt="Log Out" srcset="">
                     <p class="icon-labels">
                         Log Out
@@ -115,9 +116,9 @@
                             </span>
                         </div>
                         <!-- Log Out  -->
-                        <div class="log-out">
+                        <div class="Log-out">
                             <p>To log Out Proceed and Click the Log Out Button</p>
-                            <input type="button" value="Log out">
+                            <a href="Login.html"> <input type="button" value="Log out"></a>
                         </div>
                     </div>
 
