@@ -107,4 +107,20 @@ button:hover {
 
 .log-out-btn {
   white-space: 50px;
+}
+
+.transfer-land {
+  display: none;
+}
+
+.register-land {
+  display: none;
+}
+
+.log-out {
+  display: none;
+}
+
+.profile {
+  display: none;
 }/*# sourceMappingURL=dashboard.css.map */

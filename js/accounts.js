@@ -12,14 +12,3 @@ login.addEventListener("click", () => {
     slider.classList.remove("moveslider");
     formSection.classList.remove("form-section-move");
 });
-
-let logOut = document.getElementById("logOut-Label");
-logOut.addEventListener("click", () => {
-    console.log("hello");
-});
-
-let home = document.querySelector("home");
-let registerLand = document.querySelector("register-land");
-let transferLand = document.querySelector("transfer-land");
-let profile = document.querySelector('profile');
-let log_out = document.querySelector(log - out);
