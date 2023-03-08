@@ -10,136 +10,101 @@
 body {
   max-width: 100%;
   margin: 0 100px;
+  font-family: poppins;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1220px;
+.navigation {
+  flex-direction: column;
+  display: flex;
+  width: 200px;
 }
 
-header .container {
-  display: flex;
-  background-size: cover;
-  justify-content: space-between;
-}
-header .container .search {
-  display: flex;
-  height: 56px;
-}
-header .container .search img {
-  background-color: #001aff;
-  width: 77px;
-  height: 55px;
-}
-header .container .account {
-  display: flex;
-  align-items: baseline;
-}
-header .container .account #name {
-  color: #121212;
-  font-size: 20px;
-}
-
-header .search input[type=text] {
-  border: 2px #001aff solid;
-  width: 408px;
-  height: 53px;
-  padding: 10px;
-  color: #121212;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-main .container {
-  display: flex;
-  justify-content: space-between;
-}
-main .container .navigation {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  height: 49px;
-  width: 192px;
-  margin-bottom: 38px;
-}
-main .container .navigation img {
-  align-items: center;
-  padding-left: 45px;
-  scale: 1;
-}
-main .container .navigation .icon-labels {
-  color: #001aff;
-  font-size: 24px;
-  padding-left: 10px;
-}
-main .container .navigation:hover {
-  background-color: #B0B5DF;
-  cursor: pointer;
-  border-radius: 10px;
-  height: 49px;
-  width: 192px;
-  animation: ease-out 0.2s;
-}
-main .container .navigation:hover img {
-  scale: 1;
-}
-main .container .navigation:hover p {
-  font-weight: bolder;
-}
-main .container .content-area {
-  width: 1030px;
-  border-left: 0.5px solid #001aff;
-  max-height: 100vh;
-}
-main .container .content-area .contents {
-  margin: 0 auto;
-  padding: 10px;
-  width: 900px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  opacity: 80%;
-}
-main .container .content-area p {
-  font-size: 19px;
-}
-
-/************************* button style***
-*************************************************/
-main input[type=submit] {
-  font-size: 20px;
-  height: 49px;
-  width: 192px;
-  border-radius: 10px;
+button {
+  align-items: flex-start;
   border: none;
-  background-color: #001aff;
+  margin: 25px;
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  color: #001aff;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 10px;
+  white-space: normal;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #7c85d2;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  gap: 100px;
+}
+
+.register-land form,
+.transfer-land form,
+.log-out form {
+  gap: 10px;
+}
+.register-land input,
+.transfer-land input,
+.log-out input {
+  width: 350px;
+  height: 49px;
+  padding: 10px;
+  color: #001aff;
+  font-size: 16px;
+}
+.register-land input[type=submit],
+.register-land #logOut,
+.transfer-land input[type=submit],
+.transfer-land #logOut,
+.log-out input[type=submit],
+.log-out #logOut {
+  width: 192px;
+  height: 49px;
   color: white;
+  background-color: #001aff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
   margin-top: 25px;
 }
-main input[type=button]:hover {
-  font-weight: bolder;
-  transition: ease-in-out 0.5s;
-  background-color: #000a60;
-  text-transform: capitalize;
+.register-land textarea,
+.transfer-land textarea,
+.log-out textarea {
+  width: 350px;
+  padding: 10px;
+  color: #001aff;
+  font-size: 16px;
 }
-main .no-items {
-  align-items: center;
-  justify-content: center;
+.register-land input[type=button],
+.transfer-land input[type=button],
+.log-out input[type=button] {
+  width: 192px;
+  height: 49px;
 }
-main .no-items img {
-  margin-left: 100px;
+.register-land #cancel,
+.transfer-land #cancel,
+.log-out #cancel {
+  border: solid 2px #001aff;
+  border-radius: 10px;
+  color: #001aff;
+  background-color: transparent;
 }
 
-/************************Item display******************************
-****************************************************************
-******************************************/
-main .home-contents .land-items {
-  background-color: red;
-}
-
-main .log-out {
-  justify-content: space-between;
-  height: 100vh;
-  display: none;
+.log-out-btn {
+  white-space: 50px;
 }/*# sourceMappingURL=dashboard.css.map */

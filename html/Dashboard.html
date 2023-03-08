@@ -6,146 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+
     <link rel="stylesheet" href="/css/dashboard.css">
-    <script src="/js/index.js"></script>
+    <script src="/js/accounts.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <span>
-                <img src="/images/HeroImage (1)/logo.svg" alt="logo">
+    <div class="container">
+        <div class="header">
+            <span><img src="/images/HeroImage (1)/logo.svg" alt="logo"></span>
+            <span id="Accounts">
+                <img src="/images/Icons2/material-symbols_person-3Icons.svg" alt="Profile">
+                <p>Name </p>
             </span>
-            <!-- Search Bar -->
-            <div class="search">
-                <input type="text" id="search">
-                <img src="/images/HeroImage (1)/ic_round-searchsearch.svg" alt="Search">
-            </div>
-            <div class="account">
-                <span id="name">Onyango Oyoo</span>
-                <img src="/images/HeroImage (1)/Ellipse 1.jpg" alt="profile">
-            </div>
         </div>
-    </header>
-    <main>
-        <div class="container">
-
-            <!-- Left Tabs -->
-            <div class="navigations">
-                <span class="navigation" id="home">
-                    <img src="/images/Icons2/ic_round-homeIcons.svg" alt="Home" srcset="">
-                    <p class="icon-labels">
-                        Home
-                    </p>
-                </span>
-                <span class="navigation" id="register">
-                    <img src="/images/Icons2/material-symbols_assignment-add-outlineIcons.svg" alt="Register" srcset="">
-                    <p class="icon-labels">
-                        Register
-                    </p>
-                </span>
-                <span class="navigation" id="transfer">
-                    <img src="/images/Icons2/mdi_file-transferIcons.svg" alt="Transfer" srcset="">
-                    <p class="icon-labels">
-                        Transfer
-                    </p>
-                </span><span class="navigation" id="profile">
-                    <img src="/images/Icons2/material-symbols_person-3Icons.svg" alt="Profile" srcset="">
-                    <p class="icon-labels">
-                        Profile
-                    </p>
-                </span><span class="navigation" id="logout" onclick="log_out()">
-                    <img src="/images/Icons2/mdi_logoutIcons.svg" alt="Log Out" srcset="">
-                    <p class="icon-labels">
-                        Log Out
-                    </p>
-                </span>
+        <div class="content">
+            <div class="navigation">
+                <button id="home-btn"><img src="/images/Icons2/ic_round-homeIcons.svg">Home</button>
+                <button id="register-btn"><img src="/images/Icons2/material-symbols_add-circleadd.svg">Register Land</button>
+                <button id="transfer-btn"><img src="/images/Icons2/mdi_file-transferIcons.svg">Transfer Land</button>
+                <button id="profile-btn"><img src="/images/Icons2/material-symbols_person-3Icons.svg">Profile</button>
+                <button id="logout-btn"><img src="/images/Icons2/mdi_logoutIcons.svg">Log Out</button>
             </div>
             <div class="content-area">
-                <div class="contents">
-                    <div class="home-contents">
-                        <span id="home">
-                            <H2>
-                                Your Land Details:
-                            </H2>
-                        </span>
-                        <div class="items-display">
-                            <span class="no-items">
-                                <img src="/images/HeroImage (1)/bi_emoji-frowndisturbed.svg" alt="frown">
-                                <h3>Sorry We have nothing to Show at the moment</h3>
-                                <p>Click Register to Add Land</p>
-                            </span>
-                            <span class="land-items">
-                                <div class="land-details">
-                                    <span id="image">
-                                        <img src="/images/HeroImage (1)/bi_emoji-frowndisturbed.svg" alt="Land">
-                                    </span>
-                            <span id="desription">
-                                        <p id="Land-description">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facilis neque animi harum velit voluptas, iste provident porro nemo soluta?
-                                        </p>
-                                </span>
-                        </div>
-                        </span>
+                <div class="home">
+                    <div class="no-items">
+                        <p>Hello</p>
+                        <img src="/images/HeroImage (1)/bi_emoji-frowndisturbed.svg" alt="no details" srcset="">
+                        <p>It seams you have not registered land, click on register land</p>
                     </div>
-
-                    <!-- Register -->
-                    <div class="Register-contents">
-                        <span id="register-land">
-                            <form action="">
-                                <label for="">Land Name</label><br>
-                                <input type="text" id="land-name">
-                                <br>
-                                <label for="">Land Size</label><br>
-                                <input type="text" id="land-size"><br>
-                                <label for="">Land Description</label><br>
-                                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                                <input type="submit" value="Save">
-                            </form>
-                        </span>
+                    <div class="items-available">
+                        <p><strong>Land  Name:</strong></p>
+                        <p>Land Size:</p>
+                        <p>Land Description:</p>
                     </div>
-                    <!-- transfer contents -->
-                    <div class="transfer-contents">
-                        <span id="tranfer-land">
-                            <form action="">
-                                <label for="">Recipient</label><br>
-                                <input type="text" ><br>
-                                <label for="">Agreement</label><br>
-                                <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                                <input type="file" value="Upload Agreement Document" required> <br>
-                                <input type="submit" value="Transfer">
-                            </form>
-                        </span>
+                </div>
+                <div class="register-land">
+                    <form action="" method="post">
+                        <Label>Land Number:</Label><br>
+                        <input type="text"><br>
+                        <label for="">Land Size:</label><br>
+                        <input type="number"><br>
+                        <label for="">Land Description:</label><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+                <div class="transfer-land">
+                    <form action="" method="post">
+                        <label for="">Land Number:</label><br>
+                        <input type="text"><br>
+                        <label for="">Land Size:</label><br>
+                        <input type="number"><br>
+                        <label for="">Reason For Transfer:</label><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                        <input type="submit" value="Transfer">
+                    </form>
+                </div>
+                <div class="profile">
+                    <p><strong>Name:</strong></p>
+                </div>
+                <div class="log-out">
+                    <p>Are You sure You want To Log Out?</p>
+                    <div class="log-out-btn">
+                        <input type="button" value="Cancel" id="cancel">
+                        <input type="button" value="Log Out" id="logOut">
                     </div>
-                    <!-- Profile contents -->
-                    <div class="profile-contents">
-
-                        <span id="home">
-                            <H2>
-                                Your Land Details:
-                            </H2>
-                        </span>
-                        <div class="items-display">
-                            <span class="no-items">
-                                <img src="/images/HeroImage (1)/bi_emoji-frowndisturbed.svg" alt="frown">
-                                <h3>Sorry We have nothing to Show at the moment!</h3>
-                                <p>Click Register to Add Land</p>
-                            </span>
-                            <span class="land-items">
-    
-                            </span>
-                        </div>
-                        <!-- Log Out  -->
-                        <div class="Log-out">
-                            <p>To log Out Proceed and Click the Log Out Button</p>
-                            <a href="Login.html"> <input type="submit" value="Log out"></a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </main>
+        </div>.
+    </div>
 </body>
 
 </html>
