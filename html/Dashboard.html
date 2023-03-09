@@ -52,7 +52,7 @@
                         <input type="submit" value="Save">
                     </form>
                 </div>
-                <div class="transfer-land">
+                <div class="transfer-land" id="transfer-land">
                     <form action="" method="post">
                         <label for="">Land Number:</label><br>
                         <input type="text"><br>
@@ -111,9 +111,10 @@
 
         transfer = document.getElementById('transfer-btn');
         transfer.addEventListener('click', landTransfer);
+        transferLand = document.getElementById('transfer-land');
 
         function landTransfer() {
-            console.log("land transfered");
+            transferLand.classList.remove('transfer-land');
         }
 
         /* LOG OUT*/
