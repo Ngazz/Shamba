@@ -29,6 +29,9 @@ body {
   background-size: cover;
   position: fixed;
 }
+.header span {
+  margin-left: 1000px;
+}
 
 .navigation {
   flex-direction: column;
@@ -63,13 +66,21 @@ button:hover {
   display: flex;
 }
 
+.register-land,
+.transfer-land,
+.profile,
+.log-out {
+  visibility: hidden;
+}
 .register-land form,
 .transfer-land form,
+.profile form,
 .log-out form {
   gap: 10px;
 }
 .register-land input,
 .transfer-land input,
+.profile input,
 .log-out input {
   width: 350px;
   height: 49px;
@@ -81,6 +92,8 @@ button:hover {
 .register-land #logOut,
 .transfer-land input[type=submit],
 .transfer-land #logOut,
+.profile input[type=submit],
+.profile #logOut,
 .log-out input[type=submit],
 .log-out #logOut {
   width: 192px;
@@ -95,6 +108,7 @@ button:hover {
 }
 .register-land textarea,
 .transfer-land textarea,
+.profile textarea,
 .log-out textarea {
   width: 350px;
   padding: 10px;
@@ -103,12 +117,14 @@ button:hover {
 }
 .register-land input[type=button],
 .transfer-land input[type=button],
+.profile input[type=button],
 .log-out input[type=button] {
   width: 192px;
   height: 49px;
 }
 .register-land #cancel,
 .transfer-land #cancel,
+.profile #cancel,
 .log-out #cancel {
   border: solid 2px #001aff;
   border-radius: 10px;
@@ -155,18 +171,9 @@ button:hover {
   left: 28%;
 }
 
-.home {
-  visibility: hidden;
-}
-
-.register-land {
-  visibility: hidden;
-}
-
-.transfer-land {
-  visibility: hidden;
-}
-
-.profile {
-  visibility: hidden;
+.profile-visible {
+  font-size: 20px;
+  left: 28%;
+  z-index: 999;
+  margin-top: 0;
 }/*# sourceMappingURL=dashboard.css.map */

@@ -29,6 +29,9 @@ body {
     visibility: visible;
     background-size: cover;
     position: fixed;
+    span {
+        margin-left: 1000px;
+    }
 }
 
 .navigation {
@@ -66,7 +69,9 @@ button:hover {
 
 .register-land,
 .transfer-land,
+.profile,
 .log-out {
+    visibility: hidden;
     form {
         gap: 10px;
     }
@@ -147,22 +152,10 @@ button:hover {
     left: 28%;
 }
 
-.home {
-    visibility: hidden;
-}
-
-.register-land {
-    visibility: hidden;
-}
-
-.header {
-    // visibility: hidden;
-}
-
-.transfer-land {
-    visibility: hidden;
-}
-
-.profile {
-    visibility: hidden;
+.profile-visible {
+    font-size: 20px;
+    left: 28%;
+    z-index: 999;
+    margin-top: 0;
+    // position: relative;
 }
