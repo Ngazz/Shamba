@@ -13,10 +13,24 @@ body {
     font-family: poppins;
 }
 
+.container {
+    max-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    position: fixed;
+    height: 100px;
+}
+
 .navigation {
     flex-direction: column;
     display: flex;
     width: 200px;
+    position: fixed;
 }
 
 button {
@@ -25,7 +39,7 @@ button {
     margin: 25px;
     padding: 10px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     border-radius: 10px;
     color: #001aff;
     font-weight: bold;
@@ -33,7 +47,6 @@ button {
     gap: 10px;
     white-space: normal;
     width: 100%;
-    // background-color: transparent;
 }
 
 button:hover {
@@ -41,17 +54,10 @@ button:hover {
     cursor: pointer;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
 .content {
     display: flex;
-    // justify-content: space-between;
-    gap: 100px;
+    // background-size: cover;
+    // position: relative;
 }
 
 .register-land,
@@ -98,22 +104,61 @@ button:hover {
     }
 }
 
+.log-out {
+    visibility: hidden;
+}
+
 .log-out-btn {
     white-space: 50px;
 }
 
-.transfer-land {
-    display: none;
+.log-out-visible {
+    visibility: visible;
+    transform: translate(50%, 50%) scale(1);
+    margin: 0 250px;
+    border: #001aff solid 2px;
+    padding: 50px;
+    background-color: #7c85d2;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: 0;
+    top: 0;
+    z-index: 999;
+    position: absolute;
+}
+
+.home-visible {
+    visibility: visible;
+    top: 0;
+    position: relative;
+    background-size: cover;
+    font-size: 20px;
+    margin-top: 0;
+    top: 0;
+    z-index: 999;
+    position: absolute;
+    border: #001aff solid 2px;
+    top: 12%;
+    right: 10%;
+}
+
+.home {
+    visibility: hidden;
 }
 
 .register-land {
-    display: none;
+    visibility: hidden;
 }
 
-.log-out {
-    display: none;
+.header {
+    visibility: hidden;
+}
+
+.transfer-land {
+    visibility: hidden;
 }
 
 .profile {
-    display: none;
+    visibility: hidden;
 }
