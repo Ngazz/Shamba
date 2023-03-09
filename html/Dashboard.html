@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <span><img src="/images/HeroImage (1)/logo.svg" alt="logo"></span>
+            <img src="/images/HeroImage (1)/logo.svg" alt="logo">
             <span id="Accounts">
                 <img src="/images/Icons2/material-symbols_person-3Icons.svg" alt="Profile">
                 <p>Name </p>
@@ -63,7 +63,7 @@
                         <input type="submit" value="Transfer">
                     </form>
                 </div>
-                <div class="profile">
+                <div class="profile" id="profile">
                     <p><strong>Name:</strong></p>
                 </div>
                 <div class="log-out" id="LogOut">
@@ -93,9 +93,11 @@
 
         /*PROFILE*/
         profile = document.getElementById('profile-btn');
-        profile.addEventListener('click', revealProfile)
+        profileInfo = document.getElementById('profile');
+        profile.addEventListener('click', revealProfile);
 
         function revealProfile() {
+            profileInfo.classList.add('profile-visible');
             console.log("clicked");
         }
         /*REGISTER LAND*/
@@ -114,7 +116,7 @@
         transferLand = document.getElementById('transfer-land');
 
         function landTransfer() {
-            transferLand.classList.remove('transfer-land');
+            transferLand.classList.remove('transfer-land')
         }
 
         /* LOG OUT*/
