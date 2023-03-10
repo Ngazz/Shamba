@@ -15,23 +15,15 @@ body {
 
 .container {
     max-height: 100vh;
-    max-width: 1440px;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    position: absolute;
-    // height: 100px;
-    max-width: 100%;
-    visibility: visible;
-    background-size: cover;
     position: fixed;
-    span {
-        margin-left: 1000px;
-    }
+    height: 100px;
 }
 
 .navigation {
@@ -39,7 +31,6 @@ body {
     display: flex;
     width: 200px;
     position: fixed;
-    margin-top: 100px;
 }
 
 button {
@@ -65,13 +56,13 @@ button:hover {
 
 .content {
     display: flex;
+    // background-size: cover;
+    // position: relative;
 }
 
 .register-land,
 .transfer-land,
-.profile,
 .log-out {
-    visibility: hidden;
     form {
         gap: 10px;
     }
@@ -149,13 +140,25 @@ button:hover {
     position: absolute;
     border: #001aff solid 2px;
     top: 12%;
-    left: 28%;
+    right: 10%;
 }
 
-.profile-visible {
-    font-size: 20px;
-    left: 28%;
-    z-index: 999;
-    margin-top: 0;
-    // position: relative;
+.home {
+    visibility: hidden;
+}
+
+.register-land {
+    visibility: hidden;
+}
+
+.header {
+    visibility: hidden;
+}
+
+.transfer-land {
+    visibility: hidden;
+}
+
+.profile {
+    visibility: hidden;
 }
