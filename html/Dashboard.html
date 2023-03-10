@@ -43,12 +43,18 @@
                 </div>
                 <div class="register-land" id="register-land">
                     <form action="" method="post">
+                        <Label>First Name:</Label><br>
+                        <input type="text"><br>
+                        <Label>Last Name:</Label><br>
+                        <input type="text"><br>
+                        <Label>ID Number:</Label><br>
+                        <input type="number" required><br>
+                        <Label>County of Residence:</Label><br>
+                        <input type="text"><br>
                         <Label>Land Number:</Label><br>
                         <input type="text"><br>
                         <label for="">Land Size:</label><br>
                         <input type="number"><br>
-                        <label for="">Land Description:</label><br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea><br>
                         <input type="submit" value="Save">
                     </form>
                 </div>
@@ -65,6 +71,11 @@
                 </div>
                 <div class="profile" id="profile">
                     <p><strong>Name:</strong></p>
+                    <h2>Land Details:</h2>
+                    <span>
+                        <p>Land Size:</p>
+                        <p>Land Description</p>
+                    </span>
                 </div>
                 <div class="log-out" id="LogOut">
                     <p>Are You sure You want To Log Out?</p>
@@ -117,6 +128,7 @@
             homeDetails.classList.remove('home');
             profileInfo.classList.remove('profile-visible');
             transferLand.classList.remove('transfer-land-visible');
+            homeDetails.classList.add('hide-home');
         }
 
         /*TRANSFER LAND*/
