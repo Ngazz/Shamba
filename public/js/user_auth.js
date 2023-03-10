@@ -38,7 +38,15 @@ signupBtn.addEventListener('click', async (event) =>{
 
         console.log(result)
 
-        if (result.status === 'error'){
+        if (result.status === 'ok'){
+            signup_error_smg.style.display = 'block'
+            signup_error_smg.style.color = ''
+            signup_error_smg.innerHTML = result.message
+
+            setTimeout(() => {
+                signup_error_smg.style.display = 'none'
+            }, 2000)
+        }else if (result.status === 'error'){
             signup_error_smg.style.display = 'block'
             signup_error_smg.style.color = 'red'
             signup_error_smg.innerHTML = result.message

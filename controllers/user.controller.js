@@ -18,7 +18,7 @@ exports.signupProcess = async (req, res, next) => {
     }
 
     try{
-        const result = userModal.is_userExist(user_email)
+        const result = await userModal.is_userExist(user_email)
         console.log(result)
 
         if (result === true ){
@@ -33,12 +33,19 @@ exports.signupProcess = async (req, res, next) => {
 
 
    
-    // try{
-    //     userModal.addUser()
-    // }catch(err){
-    //     console.log(err)
-    //     return res.json({ 'status': 'error', 'message': 'Something went wrong. Try again 2'})
-    // }
+    try{
+        const result = await userModal.addUser()
+        console.log(result)
+
+        if (result === false){
+            return res.json({ 'status': 'error', 'message': 'Something went wrong. Try again', 'e': '2'})
+        }
+
+        return res.json({ 'status': 'ok', 'message': 'Account has been created successfully'}) 
+    }catch(err){
+        console.log(err)
+        return res.json({ 'status': 'error', 'message': 'Something went wrong. Try again', 'e': '3'})
+    }
     
 
     res.json({ 'status': 'ok', 'message': 'data received'})   

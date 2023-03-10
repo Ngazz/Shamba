@@ -22,7 +22,7 @@ exports.addUser = (username, email, password) => {
             });
         }
     })
-    
+    return false
 }
 
 exports.is_userExist = email => {
