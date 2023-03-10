@@ -88,6 +88,8 @@
             homeDetails.classList.remove('home');
             homeDetails.classList.add('home-visible')
             console.log("home")
+            transferLand.classList.remove('transfer-land-visible');
+
         }
 
 
@@ -108,8 +110,11 @@
         registerLand.addEventListener('click', regLand);
 
         function regLand() {
-            console.log('Land registered');
             registerLandDetails.classList.add('register-land-visible');
+            homeDetails.classList.remove('home-visible');
+            homeDetails.classList.remove('home');
+            profileInfo.classList.remove('profile-visible');
+
         }
 
         /*TRANSFER LAND*/
@@ -122,6 +127,7 @@
             transferLand.classList.add('transfer-land-visible');
             homeDetails.classList.remove('home-visible');
             registerLandDetails.classList.remove('register-land-visible');
+            profileInfo.classList.remove('profile-visible');
         }
 
         /* LOG OUT*/

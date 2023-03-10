@@ -64,7 +64,7 @@ button:hover {
 }
 
 .content {
-  display: block;
+  display: flex;
 }
 
 .register-land,
