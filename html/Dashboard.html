@@ -102,6 +102,8 @@
             profileInfo.classList.add('profile-visible');
             homeDetails.classList.remove('home-visible');
             homeDetails.classList.remove('home');
+            transferLand.classList.remove('transfer-land-visible');
+            homeDetails.classList.add('hide-home');
 
         }
         /*REGISTER LAND*/
@@ -114,7 +116,7 @@
             homeDetails.classList.remove('home-visible');
             homeDetails.classList.remove('home');
             profileInfo.classList.remove('profile-visible');
-
+            transferLand.classList.remove('transfer-land-visible');
         }
 
         /*TRANSFER LAND*/
@@ -128,6 +130,7 @@
             homeDetails.classList.remove('home-visible');
             registerLandDetails.classList.remove('register-land-visible');
             profileInfo.classList.remove('profile-visible');
+            homeDetails.classList.add('hide-home');
         }
 
         /* LOG OUT*/

@@ -175,9 +175,11 @@ button:hover {
 .transfer-land-visible,
 .profile-visible {
   visibility: visible;
-  right: 28%;
   margin-left: 250px;
   top: 10%;
+  margin-top: 100px;
+  position: fixed;
+  position: absolute;
   max-height: 100vh;
 }
 .register-land-visible form,
@@ -237,4 +239,12 @@ button:hover {
   margin-left: 250px;
   margin: top 100px;
   font-size: 20px;
+}
+
+.hide-home {
+  visibility: hidden;
+}
+
+.profile-visible {
+  border: #001aff solid 2px;
 }/*# sourceMappingURL=dashboard.css.map */
