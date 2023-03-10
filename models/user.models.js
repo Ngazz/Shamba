@@ -10,37 +10,36 @@ exports.addUser = (username, email, password) => {
         }else{
             console.log("Connected!");
             console.log('database created')
-            var sql = `INSERT INTO users (username, email, password) VALUES (${username}, ${email}, ${password})`;
+            var sql = `INSERT INTO users (username, email, password) VALUES ('${username}', '${email}', '${password}')`;
             con.query(sql, function (err, result) {
                 if (err){
-                    return false
+                    throw err
                 }else{
                     console.log("1 record inserted");
-                    return true
                 }
                 
             });
         }
     })
-    return false
 }
 
-exports.is_userExist = email => {
-    con.connect((err) => {
+exports.is_userExist =email => {
+    con.connect(async (err) => {
         if (err) throw err
 
-        con.query(`SELECT * FROM users WHERE email = '${email}'`, function (err, result) {
-            if (err){
-                throw err
-            }else{
-                console.log(result);
-                if (result.length > 0){
-                    return true
-                }else{
-                    return false
-                }
+        try {
+            const query = 'SELECT COUNT(*) as count FROM users WHERE email = ?';
+            const [rows] = await con.execute(query, [email]);
+            const count = rows[0].count;
+            console.log(count)
+            if (count > 0) {
+              return true; // email exists
+            } else {
+              return false; // email does not exist
             }
-        });
+          } catch (error) {
+            console.error(error);
+            return false; // error occurred
+          }
     })
-    return false
 }

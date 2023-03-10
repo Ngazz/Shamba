@@ -40,7 +40,7 @@ signupBtn.addEventListener('click', async (event) =>{
 
         if (result.status === 'ok'){
             signup_error_smg.style.display = 'block'
-            signup_error_smg.style.color = ''
+            signup_error_smg.style.color = '#14A44D'
             signup_error_smg.innerHTML = result.message
 
             setTimeout(() => {

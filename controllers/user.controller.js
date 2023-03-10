@@ -34,19 +34,11 @@ exports.signupProcess = async (req, res, next) => {
 
    
     try{
-        const result = await userModal.addUser()
-        console.log(result)
-
-        if (result === false){
-            return res.json({ 'status': 'error', 'message': 'Something went wrong. Try again', 'e': '2'})
-        }
-
+        await userModal.addUser(username, user_email, password)
         return res.json({ 'status': 'ok', 'message': 'Account has been created successfully'}) 
     }catch(err){
         console.log(err)
         return res.json({ 'status': 'error', 'message': 'Something went wrong. Try again', 'e': '3'})
     }
     
-
-    res.json({ 'status': 'ok', 'message': 'data received'})   
 }
